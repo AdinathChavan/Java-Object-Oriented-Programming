@@ -1,0 +1,45 @@
+package Interfaces;
+import java.util.Scanner;
+public class insta implements instagramLogin {
+     public String logIn(String username, String password){
+        return "Welcome to your account";
+     }
+    public String signUp(String fullname, String emailId, double mobileNo, String gender, String country, String birthdate){
+         return "Account create successfully !";
+    }
+
+    public static void main(String[] args) {
+        insta user = new insta();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("----------------Welcome on Instagram------------------");
+        System.out.println("Please select :\n already have account Log in - 1\n Create new account Sign up - 2\n");
+        int choice = sc.nextInt();
+        if(choice == 1){
+            System.out.println("Enter your Username");
+            String username = sc.next();
+            System.out.println("Enter Password (password should be 8 characters)");
+            String password = sc.next();
+            System.out.println(user.logIn(username, password));
+
+        }
+        else {
+            System.out.println("-------------Creating new account for you---------\n give the following information\n");
+            System.out.println("Enter your Full name ");
+            String name = sc.next();
+            System.out.println("Enter your Email id");
+            String emailId= sc.next();
+            System.out.println("Enter you mobile no ");
+            double mobileNo = sc.nextDouble();
+            System.out.println("Gender ");
+            String gender = sc.next();
+            System.out.println("Birth date ");
+            String birth = sc.next();
+            System.out.println("Country");
+            String country = sc.next();
+            System.out.println(user.signUp(name, emailId, mobileNo, gender, country, birth));
+        }
+
+
+
+    }
+}
