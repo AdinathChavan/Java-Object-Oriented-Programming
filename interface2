@@ -1,0 +1,7 @@
+package Interfaces;
+
+public interface LoanInformation {
+    public String getLoanName();
+    //In interfaces, we just create method we cannot write logic in it.
+    public int emicalculator(double amount, int year, int rate);
+}
