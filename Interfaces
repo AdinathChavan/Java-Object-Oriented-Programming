@@ -1,0 +1,6 @@
+package Interfaces;
+
+public interface instagramLogin {
+    String logIn(String username, String password);
+    String signUp(String fullname, String emailId, double mobileNo, String gender, String country, String birthdate);
+}
