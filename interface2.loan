@@ -1,0 +1,20 @@
+package Interfaces;
+
+public class informationofloan implements LoanInformation {
+    public String getLoanName(){
+        return "Rajshri Shahu Mahararaj Loan services";
+    }
+    public int emicalculator(double amount, int year, int rate){
+        return 234;
+    }
+
+
+    public static void main(String[] args) {
+        informationofloan loan = new informationofloan();
+        System.out.printf("Loan taken : %s\n",loan.getLoanName());
+        System.out.printf("Emi of Loan : %d",loan.emicalculator(123423,2,4));
+
+    }
+
+
+}
