@@ -1,0 +1,12 @@
+package Interfaces;
+
+public class client implements TechLimited{
+    public static void companyInfo(){
+        System.out.println("Name of the company "+companyName);
+        System.out.println("EmailId "+emailId);
+    }
+    public static void main(String[] args) {
+        client first = new client();
+        client.companyInfo();
+    }
+}
