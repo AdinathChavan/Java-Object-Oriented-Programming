@@ -1,0 +1,6 @@
+package Interfaces;
+
+public interface TechLimited {
+    static final String companyName = "Tech Mahindra Technologies Limited";
+    String emailId = "techmahindra79@gmail.com";
+}
