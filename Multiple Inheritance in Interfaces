@@ -1,0 +1,8 @@
+package Interfaces;
+
+public interface KplSeason6 extends KplSeason8,KplSeason7{
+    //This class extends two super classes, these means we can access methods created in 8 and 7
+    //This is multiple inheritance
+    //Multiple inheritance only possible in interfaces
+    //because in interfaces method is abstract it cannot have logic
+}
