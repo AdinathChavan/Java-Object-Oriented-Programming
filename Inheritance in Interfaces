@@ -1,0 +1,36 @@
+package Interfaces;
+
+public class KplInfo implements KplSeason8{
+   public String team1(){
+        return "Yash Challengers";
+    }
+   public String team2(){
+        return "Aaradhya Angles";
+    }
+   public String team3(){
+        return "Chhava Warriors";
+    }
+
+   public String team4(){
+        return "Swaranjli Fighters";
+    }
+
+   public String team5(){
+        return "Chavhata Fighters";
+    }
+   public String championOfs7(){
+        return "Yash Challengers";
+    }
+
+    public static void main(String[] args) {
+        KplInfo se = new KplInfo();
+        System.out.println("-------------KPL SEASON 7 TEAMS------------");
+        System.out.println(se.team1());
+        System.out.println(se.team2());
+        System.out.println(se.team3());
+        System.out.println(se.team4());
+        System.out.println(se.team5());
+        System.out.printf("--------------KPL SEASON 7 CHAMPIONS----------\n");
+        System.out.printf("---------%s------",se.championOfs7());
+   }
+}
