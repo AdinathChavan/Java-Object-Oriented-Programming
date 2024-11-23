@@ -1,0 +1,17 @@
+package Inheritance;
+import java.util.Scanner;
+
+public class BankAccount {
+    public String depositAmount(double amount){
+        return "Amount deposited successfully "+amount;
+    }
+
+    public static void main(String[] args) {
+        BankAccount user = new BankAccount();
+        System.out.println("-------welcome-------");
+        System.out.println("Enter Amount to deposit in your account");
+        Scanner sc  = new Scanner(System.in);
+        double amount = sc.nextDouble();
+         System.out.println(user.depositAmount(amount));
+    }
+}
