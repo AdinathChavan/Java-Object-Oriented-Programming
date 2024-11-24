@@ -1,0 +1,8 @@
+package Abstractclasses;
+
+public interface BankName {
+    String BANK_NAME = "KOLHAPUR DISTRICT BANK";
+    String homeLoan();
+    String carLoan();
+    String personalLoan();
+}
