@@ -1,0 +1,12 @@
+package Abstractclasses;
+
+public class LoanInfo extends PersonalLoan{
+    public static void main(String[] args) {
+        System.out.println(BANK_NAME);
+        LoanInfo user = new LoanInfo();
+        System.out.println(user.carLoan());
+        System.out.println(user.personalLoan());
+        System.out.println(user.homeLoan());
+
+    }
+}
