@@ -1,0 +1,28 @@
+package Interfaces;
+class student extends college{
+    public String divisionA(){
+        return "Division A Total count : 297";
+    }
+    public String divisionB(){
+        return "Division B Total count : 180";
+    }
+
+    public static void main(String[] args) {
+        student info = new student();
+        System.out.println(info.divisionA());
+        System.out.println(info.divisionB());
+        System.out.println(info.divisionC());
+    }
+
+}
+public abstract class college {
+    public abstract String divisionA();
+    public abstract String divisionB();
+    public String divisionC(){
+        return "Divisiion  C Total count : 234";
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
