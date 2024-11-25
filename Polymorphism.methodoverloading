@@ -1,0 +1,27 @@
+package Polymorphism;
+//Polymorphism we can achieve by two ways 
+// 1. Method overloading
+// 2. Method overriding
+public class MethodOverloading {
+    public int add(int x, int y){
+        return x+y;
+    }
+    public double add(int a, double b){
+        return a+b;
+    }
+    public double add(double a, double b){
+        return a+b;
+    }
+    public double add(int x, int y, int z){
+        return x+y+z;
+    }
+
+    public static void main(String[] args) {
+        MethodOverloading addition = new MethodOverloading();
+        System.out.println(addition.add(12,24));
+        System.out.println(addition.add(123,43324));
+        System.out.println(addition.add(21,234,231));
+        System.out.println(addition.add(239827473,2394749));
+    }
+    
+}
