@@ -1,0 +1,17 @@
+package Interfaces;
+
+public class car implements newcar {
+    public String name() {
+        return "Maruti Car";
+    }
+
+    public String amount() {
+        return "1235322";
+    }
+
+    public static void main(String[] args) {
+    car one = new car();
+        System.out.println(one.name());
+        System.out.println(one.amount());
+    }
+}
