@@ -1,0 +1,17 @@
+package Polymorphism;
+
+public class ridding extends methodoverriding {
+    public int addition(int a, int b) {
+        System.out.println("multiplication");
+        return a*b;
+    }//method overrided. 
+    // compiler always check method overrided in the child class if not present overrided method then it will execute the parent classs method.
+
+
+    public static void main(String[] args) {
+        System.out.println("Class method riding methos : ");
+        ridding one = new ridding();
+        System.out.println(one.addition(12, 34));
+        
+    }
+}
