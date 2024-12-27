@@ -1,0 +1,22 @@
+package keywordssuperthis;
+
+public class OrderInfo {
+   public int amount;
+   public String name;
+   public double emiptr;
+
+   public OrderInfo(int amount, String name,  double emiptr) {
+       this.amount = amount;
+       this.name = name;
+       this.emiptr = emiptr;
+   }
+
+    public static void main(String[] args) {
+        OrderInfo one = new OrderInfo(242,"adinath",4.8);
+
+        System.out.println(one.amount);
+        System.out.println(one.name);
+        System.out.println(one.emiptr);
+    }
+
+}
