@@ -1,0 +1,16 @@
+package keywordssuperthis;
+
+public class user extends OrderInfo {
+    public String name(){
+        return "Dhiraj Chavan";
+    }
+    public String amount(){
+        System.out.println(super.name());
+        return "43234";
+    }
+    public static void main(String[] args) {
+        user one = new user();
+        System.out.println(one.amount());
+
+    }
+}
