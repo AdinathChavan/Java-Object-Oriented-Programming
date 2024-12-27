@@ -1,0 +1,15 @@
+package finalclass;
+
+public class kdcbank extends bankLoan {
+    @Override
+    public int amount() {
+        return 450000;
+    }
+
+    public static void main(String[] args) {
+        kdcbank one = new kdcbank();
+        System.out.println(one.name());//final method
+        System.out.println(one.amount());//overrided method implement in child class
+
+    }
+}
