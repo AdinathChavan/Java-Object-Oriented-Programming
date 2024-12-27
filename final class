@@ -1,0 +1,11 @@
+package finalclass;
+
+public final class bankLoan {
+    public final String name(){
+        return "Union bank of India";
+    }
+    public int amount(){
+        return 23423;
+    }
+
+}
