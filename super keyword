@@ -1,0 +1,21 @@
+package keywordssuperthis;
+
+public class user1 extends Product {
+    String product = "Shoes";
+    public user1(){
+        super("shoes",450);
+    }
+
+    public void user1info(){
+        System.out.printf("Name of application %s\n",super.app);
+        System.out.printf("Product purchase %s\n",product);
+        System.out.printf("Total amount - %d\n",totalamount(450));
+
+    }
+    public static void main(String[] args) {
+        user1 one = new user1();
+        one.user1info();
+
+    }
+
+}
