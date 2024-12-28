@@ -1,0 +1,25 @@
+package keywordssuperthis;
+
+public class ProductInfo {
+    public ProductInfo()
+    {
+        this(12);
+        System.out.println("This is Default Constructor");
+    }
+    public ProductInfo(int a)
+    {
+        this(45.3);
+        System.out.println("This is 1 Parameter constructor "+a);
+    }
+    public ProductInfo(double b){
+        System.out.println("This is float "+b);
+    }
+
+
+
+    public static void main(String[] args) {
+        ProductInfo one = new ProductInfo();
+
+
+    }
+}
