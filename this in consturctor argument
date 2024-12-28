@@ -1,0 +1,15 @@
+package keywordssuperthis;
+
+public class methodthis {
+    public methodthis(int a){
+        System.out.println("this is method this");
+        ProductInfo one = new ProductInfo(this);
+
+    }
+
+    public static void main(String[] args) {
+        methodthis one = new methodthis(12);
+
+    }
+
+}
