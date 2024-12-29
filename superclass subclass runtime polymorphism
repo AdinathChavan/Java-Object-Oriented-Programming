@@ -1,0 +1,16 @@
+package Polymorphism.runtimedynamic;
+
+public class Bank1 {
+    public void payment1(int amount){
+        System.out.println("payment transferred successfully"+amount);
+    }
+    public void payment2(double amount){
+        System.out.println("payment transferred to bank "+amount);
+    }
+
+    public static void main(String[] args) {
+        Bank1 one = new bank2();
+        one.payment1(234323);
+    }
+}
+//in this we want to achieve runtime polymorphism then we want to first have method in super class then we call from child class, if method is only in subclass and not is super class then we get compile error.
