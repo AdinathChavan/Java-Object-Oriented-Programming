@@ -1,0 +1,13 @@
+package Polymorphism.runtimedynamic;
+
+public interface Admin {
+     void user(String name);
+     void user2(String name, int rollno);
+
+    public static void main(String[] args) {
+        Admin one = new module1();
+
+        one.user("Adinath");
+        one.user2("adinath",37);
+    }
+}
