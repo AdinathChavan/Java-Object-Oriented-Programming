@@ -1,0 +1,25 @@
+package Polymorphism.staticcompiletime;
+
+public class payment {
+    public void phonepay() {
+        System.out.println("Payment successfull");
+    }
+
+    public void googlepay() {
+        System.out.println("Payment successfull");
+
+    }
+    public void phonepay(int amount){
+        System.out.println("Payment successfull Rs- "+amount);
+    }
+    public void googlepay(int amount){
+        System.out.println("Payment successfull Rs- "+ amount);
+
+    }
+
+    public static void main(String[] args) {
+        payment user = new payment();
+        user.googlepay(473399);
+        user.phonepay();
+    }
+}
