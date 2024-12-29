@@ -1,0 +1,19 @@
+package Polymorphism.runtimedynamic;
+
+public class Payment {
+
+    public String makepayment(int amount){
+        return "Payment successfull via cash";
+    }
+
+    public static void main(String[] args) {
+        Payment one = new creditcard();// reference child class 
+        System.out.println(one.makepayment(346434));
+
+        Payment two = new debitcard();// reference child class
+        System.out.printf(two.makepayment(83828));
+        
+        
+    }
+}
+// Runtime polymorphism - parent class can contain reference of his child classes 
