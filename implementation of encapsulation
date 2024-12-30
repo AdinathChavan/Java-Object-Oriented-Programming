@@ -1,0 +1,15 @@
+package Encapusulation;
+
+public class college {
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        System.out.println(s1.getid());
+        s1.setid(57);
+        System.out.println(s1.getid());
+
+        System.out.println(s1.getname());
+        s1.setname("adinath");
+        System.out.println(s1.getname());
+    }
+}
