@@ -1,0 +1,7 @@
+public - accessible from anywhere
+
+private - only accessible from only defined class
+
+protected - accessible in same package and in different packet when inheritance relation.
+
+default -  accessible in same package 
