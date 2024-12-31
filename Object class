@@ -1,0 +1,16 @@
+package Objectclass;
+
+public class Employee {
+    public int id= 234;
+    public String name= "adinath";
+    public double mobilno = 984727853;
+
+    public static void main(String[] args) {
+        Employee one = new Employee();
+        System.out.println(one.toString());
+    }
+
+    public String toString(){
+        return " Employee : id = "+this.id+" name = "+this.name+" mobile no = "+this.mobilno;
+    }
+}
