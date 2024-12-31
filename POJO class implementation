@@ -1,0 +1,22 @@
+package Encapusulation;
+
+public class college {
+    public void getinformationofstudent(Student s1){
+        s1.setid(23);
+        s1.setname("adinath");
+        System.out.println(s1.getname());
+        System.out.println(s1.getid());
+
+    }
+
+    public static void main(String[] args) {
+
+    Student one = new Student();
+    college info = new college();
+    info.getinformationofstudent(one);
+
+
+
+
+    }
+}
