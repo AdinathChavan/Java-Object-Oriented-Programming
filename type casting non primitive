@@ -1,0 +1,17 @@
+package Objectclass;
+
+public class hdfcbank extends unionbank{
+    float c;
+    char d;
+
+    public static void main(String[] args) {
+        unionbank one = new unionbank();
+        hdfcbank two = new hdfcbank();
+        unionbank on = two;// up casting
+        System.out.println(on.getClass());
+        System.out.println(one.getClass());
+        hdfcbank three = (hdfcbank) one;// down casting
+        System.out.println(three.getClass());
+
+    }
+}
