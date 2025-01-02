@@ -1,0 +1,16 @@
+package Objectclass;
+
+public class A {
+
+    public static void main(String[] args) {
+        int a= 234;
+        float b = a;//implicit casting 
+        System.out.println(b);
+
+        double num = 2343.13287;
+        int number = (int) num;//explicit casting
+        System.out.println(number);
+    }
+
+
+}
