@@ -1,0 +1,26 @@
+package Objectclass;
+
+public class Employee {
+    public int id;
+    public double marks;
+    public char gender;
+
+   public Employee(int id, double marks, char gender){
+       this.id = id;
+       this.marks= marks;
+       this.gender= gender;
+
+   }
+
+    public static void main(String[] args) {
+        Employee one = new Employee(12, 23.3, 'M');
+        System.out.println(one.toString());//only gives object name and hash value
+        System.out.println(one.toString(one));// when override it gives information about object and content available in the object.
+    }
+
+    public String toString(Employee one){
+        return " Employee : id " +one.id+" marks "+one.marks+" gender "+one.gender;
+
+    }
+
+}
