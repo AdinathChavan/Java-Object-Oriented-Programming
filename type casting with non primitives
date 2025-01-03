@@ -1,0 +1,42 @@
+package Objectclass;
+
+public class Nonprimitivetypecasting {
+    public static void main(String[] args) {
+
+
+        unionbank one = new unionbank();
+        kdcbank two = new kdcbank();
+        icicibank three = new icicibank();
+
+        bankapplication application = one;
+        Nonprimitivetypecasting o = new Nonprimitivetypecasting();
+        o.processingapplication(application);
+
+
+    }
+
+
+    public void processingapplication(bankapplication request){
+
+        if(request instanceof unionbank)
+        {
+            unionbank union = (unionbank) request;
+            System.out.println(union.getClass());
+        }
+        else if ( request instanceof kdcbank)
+        {
+            kdcbank two = (kdcbank) request;
+            System.out.println(two.getClass());
+        }
+        else if ( request instanceof icicibank)
+        {
+            icicibank three = (icicibank) request;
+            System.out.println(three.getClass());
+        }
+        else
+        {
+            System.out.println("NO application found");
+        }
+
+    }
+}
