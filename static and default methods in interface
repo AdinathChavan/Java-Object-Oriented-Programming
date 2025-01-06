@@ -1,0 +1,39 @@
+package Interfaces;
+import java.util.Scanner;
+
+public class Icicibank implements BankLoan{
+
+    public void loanInformation(){
+        System.out.println("Conditions for Taking Loan :");
+        BankLoan.informationaboutloan();
+        System.out.println( "Loan for ");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Choose loan for - ");
+        String loantype;
+        System.out.println(" 1 - CAR LOAN \n 2 - HOME LOAN \n 3 - PERSONAL LOAN ");
+        loantype = sc.nextLine();
+        double loanAmount;
+        System.out.println("Enter your loan amount");
+        loanAmount= sc.nextDouble();
+        totalAmountwithInterest(loanAmount,loantype);
+
+    }
+    public void totalAmountwithInterest(double loanAmount, String loantype){
+        System.out.printf("Loan given - %f\n",loanAmount);
+        System.out.print( "Rate of interest :");
+        if(loantype == "CAR LOAN"){
+            System.out.print("5%\n");
+        }
+        else if(loantype == "HOME LOAN"){
+            System.out.print("7%\n");
+        }
+        else{
+            System.out.print("9%\n");
+        }
+    }
+
+    @Override
+    public void loancomplete() {
+        BankLoan.super.loancomplete();
+    }
+}
