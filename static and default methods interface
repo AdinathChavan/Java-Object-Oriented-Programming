@@ -1,0 +1,17 @@
+package Interfaces;
+
+public interface BankLoan {
+
+    public void loanInformation();
+    public void totalAmountwithInterest(double loanAmount, String loantype);
+
+    public static void informationaboutloan(){
+        System.out.println("Person should be Indian");
+        System.out.println("Person have valid adhar card");
+        System.out.println("Persona have minimum 2 lakhs balance in account ");
+    }
+    default  void loancomplete(){
+        System.out.println( "Loan give successfully");
+    }
+
+}
