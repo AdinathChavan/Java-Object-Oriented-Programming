@@ -1,0 +1,47 @@
+package practice;
+
+public class Dog {
+    String name ;
+    String breed ;
+
+    public Dog(String name, String breed){
+        this.name = name;
+        this.breed = breed;
+    }
+
+        public String getname () {
+            return name;
+        }
+        public void setname (String name){
+            this.name = name;
+        }
+        public String getBreed () {
+            return breed;
+        }
+        public void setBreed (String breed){
+            this.breed = breed;
+        }
+
+
+    public static void main(String[] args) {
+        System.out.println("Name and breed  before the updating ");
+        Dog one = new Dog("Tieson","jerman shefard");
+        System.out.printf("Name is %s\n",one.name);
+        System.out.printf("Breed is %s\n",one.breed);
+
+        System.out.println("Setting the new name to the dogs ");
+        Dog two = new Dog("John","Jerman Shefard");
+        Dog three = new Dog("Golu","Bulldog");
+
+        two.setBreed("pamilian");
+
+        three.setBreed("Gauthi");
+
+        System.out.printf("name of dog is %s and breed is %s\n",two.getname(),two.getBreed());
+        System.out.printf("name of dog is %s and breed is %s\n",three.getname(),three.getBreed());
+
+
+
+
+    }
+}
