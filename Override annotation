@@ -1,0 +1,24 @@
+package annotations;
+
+public class methodone {
+    public  void addition(int a, float b ){
+        System.out.printf("addition is %f",a+b);
+    }
+    int ab;
+    float bc;
+}
+ class methodtwo extends methodone{
+    @Override// Annotation override 
+    // override annotation used when we override method of super class. 
+    // this annotation does proper overriding between super and sub class.
+    
+    public  void addition(int a, float b){
+        System.out.printf("Addition is %f",a+b);
+    }
+
+     public static void main(String[] args) {
+         methodtwo one = new methodtwo();
+         one.addition(34,54.54f);
+     }
+}
+
