@@ -1,0 +1,19 @@
+package Interfaces.functionalinterface;
+
+public class user {
+    public static void main(String[] args) {
+        
+        
+        /*Syntax for lambda expression : <interface name> variable = (interface method parameters if have)->{
+            logic;
+        };
+         */
+        AccountInfo userone = ()->{  // no argumenets in method so keep empty brakets 
+            System.out.printf("Your account no is 2847236527372\n");
+            System.out.println("Current balance is 48987 rs ");
+        };
+
+
+      userone.acccountDetails();
+    }
+}
