@@ -12,7 +12,7 @@ public class UnionBank {
         System.out.println(result);
 
 
-/*Syntax for lambda expression -   <FI name> variable = ( arguments if have) ->{
+/*Syntax for lambda expression -   <FI name> variable = (interface method parameters if have ) ->{
                     logic
                  };*/
         BankLoan secondPerson = (String loantype, double amount, float rateOfInterest) -> {
