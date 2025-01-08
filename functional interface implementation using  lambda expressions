@@ -1,0 +1,29 @@
+package Interfaces.functionalinterface;
+
+public class UnionBank {
+    public static void main(String[] args) {
+        BankLoan onePerson = (String loantype, double amount, float rateOfInterest) ->{
+
+            System.out.println("This is the Lambda Expression");
+            return "CAR LOAN amount - 2373839  roi - 9.75%";
+        };
+
+       String result=  onePerson.loanType("Car loan",23842342,7.48f);
+        System.out.println(result);
+
+
+/*Syntax for lambda expression -   <FI name> variable = ( arguments if have) ->{
+                    logic
+                 };*/
+        BankLoan secondPerson = (String loantype, double amount, float rateOfInterest) -> {
+            System.out.println("This is lambda expression in  second method");
+
+            return "HOME LOAN amount - 2341232 roi - 7.48";
+        };
+
+        String feedback = secondPerson.loanType("HOMELOAN", 3734923,8.39f);
+        System.out.println(feedback);
+    }
+
+
+}
