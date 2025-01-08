@@ -1,0 +1,10 @@
+package Interfaces.functionalinterface;
+
+@FunctionalInterface
+public interface BankLoan {
+    String loanType(String loantype, double amount, float rateOfInterest);
+
+    public static void main(String[] args) {
+
+    }
+        }
