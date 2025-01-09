@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class Account {
+
+    private String accountHolder;
+    private long accountNo;
+    private long currentBalance;
+
+    public Account(String accountHolder, long accountNo){
+        this.accountHolder = accountHolder;
+        this.accountNo = accountNo;   
+    }
+
+    public void checkBalance(){
+        System.out.printf("Current balance in your account is %d",currentBalance);
+    }
+
+    public void creditAmount()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter total amount to add = ");
+        long amount = sc.nextLong();
+        currentBalance += amount;
+        System.out.printf("Total balance in your account is %d",currentBalance);
+    }
+
+    public void debitAmount(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter amount to debit = ");
+        long amount = sc.nextLong();
+
+        if(currentBalance>=amount )
+        {
+            currentBalance -= amount;
+            System.out.printf("\nYour remaining balance in your account is %d",currentBalance);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("please eneter your account no");
+
+        Scanner sc= new Scanner(System.in);
+        long accountNo= sc.nextLong();
+        System.out.println("Enter your name");
+        String accountHolder= sc.next();
+
+        Account onePerson = new Account(accountHolder,accountNo);
+
+        System.out.println("Please select");
+        System.out.println("1 - Check balance \n 2 - Debit amount \n 3 - Credit amount" );
+        int a = sc.nextInt();
+        switch(a)
+        {
+            
+            case 1 : onePerson.checkBalance();
+            break;
+
+            case 2 : onePerson.debitAmount();
+            break;
+
+            case 3 : onePerson.creditAmount();
+            break;
+        }
+
+
+
+        
+        
+    }
+    
+}
