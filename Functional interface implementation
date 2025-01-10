@@ -1,0 +1,11 @@
+package Interfaces.functionalinterface;
+
+public class TeamOne {
+    public static void main(String[] args) {
+        DplSeason7 teams = () -> {
+            System.out.println(" Team Name : HOTEL TEJRAJ");
+        };
+
+        teams.teamsOfSeason7();
+    }
+}
