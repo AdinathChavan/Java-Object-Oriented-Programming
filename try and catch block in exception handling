@@ -1,0 +1,22 @@
+package exceptionhandling;
+
+public class Student {
+    public static void main(String[] args) {
+        try {
+            String name = "Adinath";
+
+            System.out.println(name.toUpperCase());
+
+            // getStudentInfo(); // This is a Compile time exception. we get exception on compile time.
+            //getStudentInfo() this method not existed in class.
+
+
+        }
+         catch (NullPointerException np){
+            // If jvm got exception in try block then it enters into the catch block.
+            // If we jvm not get exception the it ignore catch block
+            System.out.println("Name should not be null !");
+            System.out.println("Please Enter your name properly");
+        }
+    }
+}
