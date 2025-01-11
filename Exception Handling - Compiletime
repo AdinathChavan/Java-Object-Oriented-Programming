@@ -1,0 +1,12 @@
+package exceptionhandling;
+
+public class Student {
+    public static void main(String[] args) {
+        String name = "Adinath";
+
+        System.out.println(name.toUpperCase());
+
+        getStudentInfo(); // This is a Compile time exception. we get exception on compile time.
+        //getStudentInfo() this method not existed in class.
+    }
+}
