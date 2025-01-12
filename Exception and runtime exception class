@@ -1,0 +1,28 @@
+package exceptionhandling;
+
+public class Employee {
+    public static void main(String[] args) {
+        String name = null;
+
+        String  [] players = {"Adinath","Dhiraj","Sachin","Prashant","Sonya","Ajay"};
+        try{
+            System.out.println(players[8]);
+        }catch(ArrayIndexOutOfBoundsException ax){
+        String message = ax.getMessage();
+        System.out.println(message);}
+        try{
+            System.out.println(name.toUpperCase());
+
+        }catch(NullPointerException nx){
+            String text = nx.getMessage();
+            System.out.println(text);
+        }
+        catch(Exception ex){ // This is a Grandparent exception class which is parent for all the exception occurred in the program.
+            String exception = ex.getMessage();// we can define this exception class at last or at first position of the program.
+            System.out.println(exception);// Runtime exception class is the child for the exception class and all the runtime exceptions are child for this Runtime exception class.
+        }
+        finally{
+            System.out.println("No exception .... Closing connection !");
+        }
+    }
+}
