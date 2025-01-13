@@ -1,0 +1,26 @@
+package exceptionhandling;
+
+public class ToString {
+    int id;
+    float cgpa;
+    String name;
+    public ToString(int id, float cgpa, String name){
+        this.id= id;
+        this.cgpa=cgpa;
+        this.name=name;
+    }
+
+    public static void main(String[] args) {
+        ToString student1 = new ToString(12,8.98f,"Adinath");
+       String result= student1.ToString(student1);
+        System.out.println(result);
+
+    }
+
+    public String ToString(ToString one){
+        System.out.println(one.id);
+        System.out.println(one.cgpa);
+        System.out.println(one.name);
+        return "This is information available in the object";
+    }
+}
