@@ -1,0 +1,19 @@
+package exceptionhandling;
+
+public class Team {
+    public String teamName() throws NullPointerException {
+        String name = "Hotel Tejraj";
+        return name;
+    }
+
+    public static void main(String[] args) {
+        Team one = new Team();
+        String name = one.teamName();
+        try {
+            System.out.println(name.toUpperCase());
+        } catch (NullPointerException ex) {
+            String message = ex.getMessage();
+            System.out.println(message);
+        }
+    }
+}
