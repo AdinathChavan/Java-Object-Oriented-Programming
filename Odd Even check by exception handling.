@@ -1,0 +1,31 @@
+package exceptionhandling;
+import java.util.Scanner;
+
+public class Practice {
+    public int exceptionhandling(int i){
+        if(i%2==0){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
+    public static void main(String[] args) {
+        Practice dayOne = new Practice();
+        System.out.println("Enter any value - ");
+        Scanner sc = new Scanner(System.in);
+        int value = sc.nextInt();
+        int result = dayOne.exceptionhandling(value);
+        int z = 56;
+
+        try{
+            float b = z/result;
+            System.out.println("Result is "+b);
+            System.out.printf("Value passed is even");
+        }catch(ArithmeticException ex){
+            System.out.println("Value passed is odd");
+            System.out.println(ex.getMessage());
+        }
+
+    }
+}
