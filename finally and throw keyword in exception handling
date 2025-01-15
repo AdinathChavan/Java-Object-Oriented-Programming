@@ -1,0 +1,22 @@
+package exceptionhandling;
+
+public class Team {
+    public String teamName() throws NullPointerException {
+        String name = "Hotel Tejraj";
+        return name;
+    }
+
+    public static void main(String[] args) {
+        Team one = new Team();
+        String name = one.teamName();
+        try {
+            System.out.println(name.toUpperCase());
+        } catch (NullPointerException ex) {// we can define more than one catch block for try block but maintaining hierarchy of the child parent relation.
+            String message = ex.getMessage();
+            System.out.println(message);
+        }
+        finally{// finally block not mandatory to define
+            System.out.println(" Permanent block always executed either exception came or not");
+        }
+    }
+}
