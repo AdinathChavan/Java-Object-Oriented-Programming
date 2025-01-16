@@ -1,0 +1,32 @@
+package exceptionhandling;
+import java.util.Scanner;
+
+public class Players {
+    public void newPlayers(){
+        System.out.println("Enter id of the players");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter player id of player one : ");
+        int id = sc.nextInt();
+        System.out.println("Enter player id of player two : ");
+        int tid = sc.nextInt();
+        try {
+            verification(id, tid);// this method may produce exception hence it keep inside try block thats it able to handle exception.
+        }
+        catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+    }
+    public void verification(int id1, int id2) throws Exception{
+        if(id1==17 || id2 == 17){
+            throw new Exception("This number is reserved, please enter another number");// userdefined exception.
+        }else{
+            System.out.println(id1);
+            System.out.println(id2);
+        }
+    }
+
+    public static void main(String[] args){
+        Players team = new Players();
+        team.newPlayers();
+    }
+}
