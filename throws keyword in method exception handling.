@@ -1,0 +1,19 @@
+package exceptionhandling;
+
+public class Match {
+
+    public String teamMates() throws NullPointerException {
+        return null;
+    }
+
+    public static void main(String[] args) {
+        Match first = new Match();
+        String result = first.teamMates();
+        try {
+            System.out.println(result.toUpperCase());
+        } catch (NullPointerException ex) {
+            String message = ex.getMessage();
+            System.out.println(message);
+        }
+    }
+}
