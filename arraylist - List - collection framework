@@ -1,0 +1,19 @@
+package collectionframework;
+import java.util.ArrayList;
+
+public class arraylist {
+    public static void main(String[] args) {
+       ArrayList one = new ArrayList();
+       one.add(23);
+       one.add("Adinath Chavan");
+       one.add(388);
+       one.add("Man of the Match");
+       one.add("Man of the Series");
+       one.add("Orange Cap");
+
+       for(int i = 0; i< one.size(); i++){
+           System.out.println(one.get(i));
+       }
+
+    }
+}
