@@ -1,0 +1,48 @@
+package collectionframework;
+
+import java.util.ArrayList;
+
+public class ArrayListOperations {
+    public static void main(String[] args) {
+        ArrayList<String>  namesOfStudents = new ArrayList<>();
+
+        namesOfStudents.add("Adinath");//add operation.
+        namesOfStudents.add("Dhiraj");
+        namesOfStudents.add("Kiran");
+        namesOfStudents.add("Ajay");
+        namesOfStudents.add("Pratik");
+        namesOfStudents.add("Sonya");
+
+        System.out.println("Printing all Names :  Using For loop");
+
+        for(int i = 0; i<namesOfStudents.size(); i++)
+        {
+            System.out.println(namesOfStudents.get(i));
+        }
+
+        System.out.println("Printing all Names : Using for-Each loop");
+        for( String names : namesOfStudents)
+        {
+            System.out.println(names);
+        }
+
+        System.out.println("updating names from the list");
+        namesOfStudents.add(0,"Adi");// update operation
+        namesOfStudents.add(3,"Abhishek");
+        for(int i = 0; i<namesOfStudents.size(); i++)
+        {
+            System.out.println(namesOfStudents.get(i));
+        }
+
+        System.out.println("Deleting names from list");
+        namesOfStudents.remove(2);// delete operation
+        namesOfStudents.remove(5);
+
+        for(int i = 0; i<namesOfStudents.size(); i++)
+        {
+            System.out.println(namesOfStudents.get(i));
+        }
+
+
+    }
+}
