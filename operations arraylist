@@ -1,0 +1,23 @@
+package collectionframework;
+
+import java.sql.Array;
+import java.util.ArrayList;
+
+public class Numbers {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+        numbers.add(57);
+        numbers.add(894);
+        numbers.add(32);
+        numbers.add(950);
+        numbers.add(234);
+
+        numbers.addLast(346);
+        numbers.addFirst(22343);
+
+        System.out.println(numbers.getLast());
+        System.out.println(numbers.getFirst());
+        System.out.println(numbers.get(5));
+    }
+}
