@@ -1,0 +1,30 @@
+package collectionframework;
+import java.util.ArrayList;
+
+public class Team {
+    public static void main(String[] args) {
+        ArrayList<String> teamMembers = new ArrayList<String >();
+
+        teamMembers.add("Adinath");
+        teamMembers.add("Dhiraj");
+        teamMembers.add("Sonya");
+        teamMembers.add("Dipak");
+        teamMembers.add("Sachin");
+
+        ArrayList<String> cseMembers = new ArrayList<String>();
+
+        cseMembers.add("Pavanjeet");
+        cseMembers.add("Adinath");
+        cseMembers.add("Vipul");
+        cseMembers.add("Sainath");
+        cseMembers.add("Pranav");
+
+        //teamMembers.addAll(cseMembers);// Merging the list
+        //System.out.println(teamMembers);
+
+
+
+        cseMembers.removeAll(teamMembers);// list 2 - list 1 
+        System.out.println(cseMembers);
+    }
+}
