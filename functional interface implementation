@@ -1,0 +1,16 @@
+package Interfaces.functionalinterface;
+
+public class student  {
+    public static void main(String[] args) {
+        studentInfo one = (int id, String name, float cgpa) ->{
+            System.out.printf("name of student %s\n",name);
+            System.out.printf("id of the student %d\n",id);
+            System.out.printf("cgpa of student %.2f\n",cgpa);
+
+            return "This is information of student";
+        };
+        
+        String result = one.infoOfStudent(23,"Adinath",8.98f);
+        System.out.println(result);
+    }
+}
