@@ -1,0 +1,23 @@
+package collectionframework;
+
+public class Students {
+    private int studentId;
+    private String nameOfStudent;
+    private float markOfStudent;
+
+    public Students(int studentId, String nameOfStudent, float markOfStudent){
+        this.studentId = studentId;
+        this.markOfStudent = markOfStudent;
+        this.nameOfStudent = nameOfStudent;
+    }
+
+    public void setStudentId(int id){
+        this.studentId = id;
+    }
+    public void setNameOfStudent(String name){
+        this.nameOfStudent= name;
+    }
+    public void setMarkOfStudent(float marks){
+        this.markOfStudent = marks;
+    }
+}
