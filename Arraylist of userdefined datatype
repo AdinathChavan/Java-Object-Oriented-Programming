@@ -1,0 +1,20 @@
+package collectionframework;
+
+import java.util.ArrayList;
+
+public class info {
+    public static void main(String[] args) {
+        ArrayList<Students> information = new ArrayList<Students>();
+        // we create a arraylist of userdefined datatype and we list the objects of classes into arraylist.
+
+        Students one = new Students(12,"Adinath",12.4f);
+        Students two = new Students(53,"Ajay", 72.3f);
+        Students three = new Students(23, "Kiran",34.3f);
+
+        information.add(0,one);
+        information.add(1,two);
+        information.add(4,three);
+
+        System.out.println(information);
+    }
+}
