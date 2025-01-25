@@ -1,0 +1,22 @@
+package collectionframework;
+
+import java.util.Vector;
+
+public class vector {
+    public static void main(String[] args) {
+        Vector<String> vectorlist = new Vector<>();
+
+        vectorlist.add("Adinath");
+        vectorlist.add("Dhiraj");
+        vectorlist.add("Ajay");
+        vectorlist.add("Prathmesh");
+
+        vectorlist.remove(2);
+
+        System.out.println(vectorlist.getFirst());
+        System.out.println(vectorlist);
+        System.out.println(vectorlist.size());
+        // List is interface and arraylist, vector, linkedlist are the implemented classes of the list.
+        // we cannot create object for the list interface.
+    }
+}
