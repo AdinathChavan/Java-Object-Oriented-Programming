@@ -1,0 +1,18 @@
+package collectionframework;
+
+import java.util.LinkedList;
+
+public class linkedlist {
+    public static void main(String[] args) {
+        LinkedList<Integer> list  = new LinkedList<>();
+
+        list.add(23);
+        list.add(89);
+        list.add(93);
+        list.add(23);
+
+        System.out.println(list);
+        
+        // 0perations of linked list are same as ArrayList.
+    }
+}
