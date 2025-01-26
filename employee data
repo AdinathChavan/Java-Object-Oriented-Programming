@@ -1,0 +1,33 @@
+package collectionframework;
+import java.util.ArrayList;
+
+public class Data {
+    public static void main(String[] args) {
+
+        ArrayList<Employee> data = new ArrayList<Employee>();
+
+        Employee one = new Employee(12333,124,"adinath",908765657,'M');
+        Employee two = new Employee(12349,144,"ajay",909565657,'M');
+        Employee three = new Employee(12753,184,"kiran",908955657,'M');
+
+        data.add(one);
+        data.add(two);
+        data.add(three);
+
+        double[] salary = new double[3];
+
+        salary[0]=one.getSalary();
+        salary[1]=two.getSalary();
+        salary[2]= three.getSalary();
+
+        if(salary[0]>salary[1] && salary[0]>salary[2]){
+            System.out.printf("Highest Salary is %f",salary[0]);
+        }
+        else if(salary[1]>salary[0] && salary[1]>salary[2]){
+            System.out.printf("Highest salary is %f",salary[1]);
+        }
+        else{
+            System.out.printf("Highest salary is %f",salary[2]);
+        }
+    }
+}
