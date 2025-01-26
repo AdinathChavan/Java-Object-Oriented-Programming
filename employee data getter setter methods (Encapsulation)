@@ -1,0 +1,58 @@
+package collectionframework;
+
+public class Employee {
+    private int employeeId;
+    private String nameOfEmployee;
+    private long mobileNo;
+    private double salary;
+    private char gender;
+
+
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public void setNameOfEmployee(String nameOfEmployee) {
+        this.nameOfEmployee = nameOfEmployee;
+    }
+
+    public void setMobileNo(long mobileNo) {
+        this.mobileNo = mobileNo;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public String getNameOfEmployee() {
+        return nameOfEmployee;
+    }
+
+    public long getMobileNo() {
+        return mobileNo;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public Employee(double salary, int employeeId, String nameOfEmployee, long mobileNo, char gender) {
+        this.salary = salary;
+        this.employeeId = employeeId;
+        this.nameOfEmployee = nameOfEmployee;
+        this.mobileNo = mobileNo;
+        this.gender = gender;
+    }
+}
