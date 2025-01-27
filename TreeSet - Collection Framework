@@ -1,0 +1,21 @@
+package collectionframework;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class treeset {
+    public static void main(String[] args) {
+        Set<String> students = new TreeSet<String>();
+        // parent holding child references. here Set is parent an interface. and TreeSet is child and implemented class of Set.
+        // TreeSet not allows duplicate and also it stores values in "sorted" order. TreeSet is an implemented class of the Set.
+        students.add("Adinath");
+        students.add("Dhiraj");
+        students.add("Adinath");
+        students.add("Dipak");
+        students.add("Ajay");
+        students.add("Kiran");
+        students.add("Dhiraj");
+
+        System.out.println(students.size());
+        System.out.println(students);
+    }
+}
