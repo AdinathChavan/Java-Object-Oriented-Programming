@@ -1,0 +1,24 @@
+package collectionframework;
+import java.util.HashMap;
+
+public class hashmap {
+
+    public static void main(String[] args) {
+        HashMap<Integer, String> info = new HashMap<>();
+        // Hashmap consisting two parts key and values : keys are unique and values are may be same.
+        // adding data
+        info.put(1,"Dhiraj");
+        info.put(2, "Adinath");
+        info.put(3,"Ajay");
+        info.put(4,"Kiran");
+        info.put(4,"Rushikesh");//override the index for and change kiran to rushikesh
+
+        System.out.println(info);
+
+        info.remove(2);// removing data of key 2.
+        System.out.println(info);
+
+
+
+    }
+}
