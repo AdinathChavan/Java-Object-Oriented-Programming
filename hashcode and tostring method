@@ -1,0 +1,36 @@
+package collectionframework;
+
+public class tostring {
+    int rollno;
+    float cgpa;
+    String name;
+
+    public tostring(int rollno, float cgpa, String name){
+        this.rollno = rollno;
+        this.cgpa = cgpa;
+        this.name = name;
+    }
+
+    public static void main(String[] args) {
+        tostring one = new tostring(12,23.4f,"Adinath");
+        tostring two = new tostring(23,9.2f,"Ajay");
+        tostring three = new tostring(203,9.6f,"Dhiraj");
+        tostring four = new tostring(12,23.4f,"Adinath");
+        
+        // checking hashcodes of the objects to detect which objects would same.
+        System.out.println(one.hashCode());
+        System.out.println(two.hashCode());
+        System.out.println(three.hashCode());
+        System.out.println(four.hashCode());
+
+        System.out.println(one.toString(one));
+        System.out.println(one.toString(four));// object one and four, contains are same. 
+
+
+
+    }
+
+    public String toString(tostring one){
+        return "roll no "+one.rollno+" cgpa "+one.cgpa+" name "+one.name;
+    }
+}
