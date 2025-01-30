@@ -1,0 +1,22 @@
+package collectionframework;
+import java.util.HashMap;
+
+public class hashMapdemo {
+    public static void main(String[] args) {
+        HashMap<Integer, Student> information = new HashMap<>();
+
+        Student one = new Student(12,"Adinath",8.3f);
+        Student two = new Student(73,"Dhiraj",8.9f);
+        Student three = new Student(49,"Abhishek",8.7f);
+
+
+        information.put(1,one);
+        information.put(2,two);
+        information.put(3,three);
+
+        System.out.println(information.get(1));
+        System.out.println(information.get(2));
+        System.out.println(information.get(3));
+
+    }
+}
