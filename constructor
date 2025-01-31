@@ -1,0 +1,33 @@
+package practice;
+
+
+import java.sql.SQLOutput;
+
+public class constructor {
+    int age;
+    String name;
+    float cgpa;
+    long mobileno;
+
+    public constructor(int ag, String nam, float cgp, long mobilen)
+    {
+        age=ag;
+        name = nam;
+        cgpa=cgp;
+        mobileno= mobilen;
+    }
+    /*public void printinfo(){
+        System.out.println(age);
+        System.out.println(cgpa);
+        System.out.println(name);
+        System.out.println(mobileno);
+    }*/
+
+
+    public static void main(String[] args) {
+        System.out.println("ajay");
+        constructor a1=new constructor(12,"Ajay",9.3f,987656345l);
+
+        System.out.println(a1);
+    }
+}
