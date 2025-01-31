@@ -1,0 +1,23 @@
+package practice;
+
+public class Rectangle {
+    int height;
+    int width;
+
+    public Rectangle(int height, int width){
+        this.height= height;
+        this.width= width;
+        areaOfRectangle(height,width);
+        perimeterOfRectangle(height,width);
+    }
+    public void areaOfRectangle(int height, int width){
+        System.out.printf("Area is %d\n", height*width);
+    }
+    public void perimeterOfRectangle(int height , int width){
+        System.out.printf("Perimeter is %d",2*(width+height));
+    }
+
+    public static void main(String[] args) {
+        Rectangle one = new Rectangle(12,34);
+    }
+}
