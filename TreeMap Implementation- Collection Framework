@@ -1,0 +1,24 @@
+package collectionframework;
+import java.util.TreeMap;
+import java.util.Set;
+
+public class treemap {
+
+    public static void main(String[] args) {
+        TreeMap<Integer,String> map = new TreeMap<>();
+
+        map.put(89,"Abhishek");
+        map.put(1,"Dhiraj");
+        map.put(98,"Adinath");
+        map.put(97,null);
+        map.put(4,null);
+
+        Set<Integer> keys = map.keySet();
+        // TreeMap store the keys in sorting order. it not allows key as null , but value as null many time.
+
+        for(Integer key : keys){
+            System.out.println(key +"-> "+ map.get(key));
+        }
+
+    }
+}
