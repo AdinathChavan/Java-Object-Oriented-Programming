@@ -1,0 +1,45 @@
+package practice;
+import java.util.Objects;
+import java.lang.Object;
+
+public class equalsAndHashcode {
+    int rollno;
+    float cgpa;
+    String name;
+
+        public equalsAndHashcode(){
+
+        }
+    public equalsAndHashcode(int rollno, float cgpa, String name){
+        this.rollno =  rollno;
+        this.cgpa = cgpa;
+        this.name = name;
+    }
+    public static void main(String[] args) {
+        equalsAndHashcode one = new equalsAndHashcode(12,7.2f,"Adinath");
+        equalsAndHashcode two= new equalsAndHashcode(45,8.3f,"kiran");
+        equalsAndHashcode three = new equalsAndHashcode(57,9.3f, "Dhiraj");
+        equalsAndHashcode five = new equalsAndHashcode(12,7.2f,"Adinath");
+
+        System.out.println(five.hashCode());
+        System.out.println(one.hashCode());
+
+        System.out.println(one.equals(five));
+    }
+
+    public boolean equals(equalsAndHashcode object){
+        if(this == object )
+            return true;
+        if(getClass() != object.getClass())
+            return false;
+        if(object == null)
+            return false;
+
+        else
+            return false;
+    }
+
+    public int hashCode(equalsAndHashcode one){
+            return Objects.hash(rollno,name, cgpa);
+    }
+}
