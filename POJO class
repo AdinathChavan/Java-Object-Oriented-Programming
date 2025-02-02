@@ -1,0 +1,28 @@
+package practice;
+// this class is containing private variables which cannot modified or accessed directy.
+// for doing some action we use getter setter method i.e we acquiring encapsulation
+public class variables {
+    private int studentId;
+    private String nameOfStudent;
+    private float cgpa;
+
+    public int getStudentId(){
+        return studentId;
+    }
+    public String getnameOfStudent(){
+        return nameOfStudent;
+    }
+    public float getcgpa(){
+        return cgpa;
+    }
+
+    public void setNameOfStudent(String name){
+        this.nameOfStudent = name;
+    }
+    public void setCgpa(float cgpa){
+        this.cgpa = cgpa;
+    }
+    public void setStudentId(int studentId){
+        this.studentId = studentId;
+    }
+}
