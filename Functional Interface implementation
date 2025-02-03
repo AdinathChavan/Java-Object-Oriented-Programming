@@ -1,0 +1,17 @@
+package Interfaces.functionalinterface;
+
+public class Userone {
+    Flipcart buyproducts = (double amount, String name) -> {
+        System.out.println(" Name of product purchased - "+name);
+        System.out.println("Total amount "+amount);
+    };
+    public static void main(String[] args) {
+        Userone adinath = new Userone();
+        adinath.buyproducts.purchasedAtom(12000,"Cricket Bat");
+
+        System.out.println("Criterias for the buying products");
+        Flipcart.productCriteria();//static method.
+        System.out.println("Criterias for the get Loan");
+        adinath.buyproducts.loanCriteria();
+    }
+}
