@@ -1,0 +1,18 @@
+package Interfaces.functionalinterface;
+
+@FunctionalInterface // Functional Interface can only contain only one abstract method.
+public interface Flipcart {
+    void purchasedAtom(double amount, String name);
+     
+    public static void productCriteria(){
+        System.out.println("1-> Person should have their own bank account");
+        System.out.println("2-> Minimum bank balance 20,000");
+        System.out.println("3-> Person who satisfy above two criteria then it eligible for Buy products.");
+    }
+    
+     default void loanCriteria(){
+         System.out.println("1-> Person should satisfy product criteria.");
+         System.out.println("2-> No any remaining loans.");
+    }
+    
+}
