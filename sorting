@@ -1,0 +1,29 @@
+package practice;
+import java.util.Objects;
+import java.util.TreeSet;
+
+public class adinath {
+    String name= "Adinath";
+    double mobileno= 9881937969f;
+
+    sortingofobjects objects  = (adinath two, dhiraj one, abhi three) ->{
+        TreeSet<Object> sort = new TreeSet<>();
+
+        sort.add(one);
+        sort.add(two);
+        sort.add(three);
+
+        for(Object sorting : sort){
+            System.out.println(sorting);
+        }
+    };
+
+    public static void main(String[] args) {
+        adinath sortbyname = new adinath();
+        dhiraj bowl = new dhiraj();
+        abhi bat = new abhi();
+        adinath feild = new adinath();
+
+        sortbyname.objects.sorting(feild, bowl,bat);
+    }
+}
