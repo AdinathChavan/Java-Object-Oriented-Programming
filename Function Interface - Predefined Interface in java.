@@ -1,0 +1,14 @@
+package Java8Features;
+import java.util.function.Function;
+import java.util.Scanner;
+
+public class FunctionInterface {
+
+    Function<String, Integer> employee = (String name) ->{
+       return name.length();
+    };
+    public static void main(String[] args) {
+        FunctionInterface one = new FunctionInterface();
+        System.out.println(one.employee.apply("adinath"));
+    }
+}
