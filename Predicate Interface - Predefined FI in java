@@ -1,0 +1,22 @@
+package Java8Features;
+import java.util.function.Predicate;
+
+public class PredicateInterface {
+
+    //Predicate Interface have any input value but it have fixed boolean return type.
+    // it used for testing purpose.
+    //test() method used for the passing input value to predicate interface.
+    Predicate<Integer> one = (Integer a) -> {
+        if(a%2==0){
+            return true;
+        }else {
+            return false;
+        }
+    };
+
+    public static void main(String[] args) {
+        PredicateInterface two = new PredicateInterface();
+        boolean result=two.one.test(334);
+        System.out.println(result);
+    }
+}
