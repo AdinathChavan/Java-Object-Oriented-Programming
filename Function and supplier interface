@@ -1,0 +1,56 @@
+package practice;
+import java.util.function.Function;
+import java.util.Scanner;
+import java.util.function.Supplier;
+
+public class Office {
+
+    Employees one = new Employees("Adinath",2341,78000,"Java Developer");
+    Employees two = new Employees("Dhiraj",6738,90888,"Tester");
+    Employees three = new Employees("Ajay", 3837,98777,"Analyzer");
+
+
+    Function<String, Double> salaryOfEmp = (String name) -> {
+
+        return one.getSalary();
+    };
+
+    Function<String, Double> salarOfEmp = (String name) -> {
+
+        return two.getSalary();
+    };
+
+    Function<String, Double> salyOfEmp = (String name) -> {
+
+        return three.getSalary();
+    };
+
+
+    Supplier<String> employee = ()->{
+        return one.getName();
+    };
+    Supplier<String> empl = ()->{
+        return two.getName();
+    };
+    Supplier<String> em = ()->{
+        return three.getName();
+    };
+
+    public static void main(String[] args) {
+            Office two = new Office();
+            double salary =  two.salaryOfEmp.apply("Adinath");
+        System.out.println("Salary is "+salary);
+            double amount = two.salarOfEmp.apply("Dhiraj");
+        System.out.println("Salary is "+amount);
+            double money = two.salyOfEmp.apply("Ajay");
+        System.out.println("Salary is "+money);
+
+        
+        // Supplier interface which only gives output instead of input.
+        System.out.println(two.employee.get());
+        System.out.println(two.empl.get());
+        System.out.println(two.em.get());
+
+        }
+    }
+
