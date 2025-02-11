@@ -1,0 +1,49 @@
+package StreamAPI;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+import java.util.function.Predicate;
+
+public class filtering {
+
+    public static void main(String[] args) {
+        // here we first create arraylist to get data of all employees.
+        ArrayList<Data> info = getAllData();
+        
+        //after that convert that all data into stream to apply stream operations.
+        Stream<Data> allinfo = info.stream();
+        
+        // Predicate is the input for the stream. 
+        Predicate<Data> ref = checking -> checking.getGender().equalsIgnoreCase("Female");
+
+        Stream<Data> femaleemp = allinfo.filter(ref);
+
+        List<Data> result = femaleemp.toList();
+
+        for(Data one : result){
+            System.out.println(one);
+        }
+    }
+
+    public static ArrayList<Data> getAllData(){
+        ArrayList<Data> deta = new ArrayList<>();
+
+        Data one = new Data("Adinath",8734,"Male",98343,"Developer");
+        deta.add(one);
+        Data two = new Data("Dhiraj",8739,"Male",78636,"Analyser");
+        deta.add(two);
+        Data three = new Data("Sanika",8722,"Female",87334,"Developer");
+        deta.add(three);
+        Data four = new Data("Ajay",8733,"Male",90000,"Tester");
+        deta.add(four);
+        Data five = new Data("Aditi",8033,"Female",92000,"Tester");
+        deta.add(five);
+        Data six = new Data("Pranjal",8702,"Female",80334,"Developer");
+        deta.add(six);
+
+        return deta;
+
+
+    }
+}
