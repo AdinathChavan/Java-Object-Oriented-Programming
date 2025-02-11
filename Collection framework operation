@@ -1,0 +1,43 @@
+package practice;
+import java.util.stream.Stream;
+import java.util.List;
+import java.util.ArrayList;
+
+public class EmployeeInfo {
+
+    public static void main(String[] args) {
+
+
+       ArrayList<Employees> data = getAllEmployees();
+
+       ArrayList<Employees> allemployees = new ArrayList<>();
+
+       for(Employees information : data){
+           if(information.getSalary()>=89000){
+               allemployees.add(information);
+           }
+       }
+
+        for(Employees info : allemployees){
+            System.out.println(info);
+        }
+
+    }
+
+
+    public static ArrayList<Employees> getAllEmployees(){
+        ArrayList<Employees> employees = new ArrayList<>();
+        Employees one = new Employees("Adinath",3843,90000,"Tester");
+        employees.add(one);
+        Employees two = new Employees("dhiraj",3842,89000,"Analyser");
+        employees.add(two);
+        Employees three = new Employees("ajay",3873,76544,"Developer");
+        employees.add(three);
+        Employees four = new Employees("kiran",3243,87699,"Tester");
+        employees.add(four);
+        Employees five = new Employees("rushi",3843,90888,"Tester");
+        employees.add(five);
+
+        return employees;
+    }
+}
