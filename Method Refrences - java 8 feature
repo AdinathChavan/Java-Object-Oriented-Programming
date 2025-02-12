@@ -1,0 +1,23 @@
+package Java8Features;
+
+public class office {
+    public static void main(String[] args) {
+        //Method reference we can refer method from the interface in a class which is static or non-static.
+        //syntax ->   FI name reference = instance of class  :: method name.
+        // which method we have to implement this method is available in interface and class. that method should have same return type as in interface.
+        Employees one = new Employees("Dhiraj",89300,5436,"Male");
+        Employees two = new Employees("Adinath",89000,9436,"Male");
+
+        //information info = two:: informationOfEmp; For NON-STATIC method.
+        //System.out.println(info.informationOfEmp(9436));
+        //System.out.println(info.informationOfEmp(5436));
+
+        //For STATIC METHODS : same as above only object creation is not required.
+        information officeinfo = Employees::informationOfEmp;
+
+        System.out.println(officeinfo.informationOfEmp(5436));
+
+
+
+    }
+}
