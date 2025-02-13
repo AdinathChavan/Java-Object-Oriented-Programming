@@ -1,0 +1,11 @@
+package practice;
+
+public class Toss {
+
+    public static void main(String[] args) {
+        Match the = new Match();
+        Ground one = the::teamName;
+
+        System.out.println(one.teamName("sonya"));
+    }
+}
