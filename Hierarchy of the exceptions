@@ -1,0 +1,33 @@
+package exceptionhandling;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import java.lang.Exception;
+import java.lang.NullPointerException;
+
+public class Ball {
+
+    public static void weightOfBall(double wt) {
+        System.out.println( "Weight of the ball is "+wt);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the weight of the ball -");
+        try {
+
+            String name = null;
+            System.out.println(name.toLowerCase());
+        } catch (InputMismatchException ex) {
+            System.out.println( " Exception get "+ex.getMessage());
+        }catch(ArithmeticException ex){
+            System.out.println(" Arithmetic Exception get "+ex.getMessage());
+        }catch(NullPointerException ex ){
+            System.out.println(" Null Pointer Exception get "+ex.getMessage());
+        }catch(Exception ex){
+            System.out.println("Exception get"+ex.getMessage());
+        }
+        finally{
+            System.out.println("Code executed successfully");
+        }
+    }
+}
