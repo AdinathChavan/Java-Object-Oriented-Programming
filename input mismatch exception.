@@ -1,0 +1,22 @@
+package exceptionhandling;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import java.lang.Exception;
+
+public class Ball {
+
+    public static void weightOfBall(double wt) {
+        System.out.println( "Weight of the ball is "+wt);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the weight of the ball -");
+        try {
+            double wt = sc.nextDouble();
+            weightOfBall(wt);
+        } catch (InputMismatchException ex) {
+            System.out.println( " Exception get "+ex.getMessage());
+        }
+    }
+}
