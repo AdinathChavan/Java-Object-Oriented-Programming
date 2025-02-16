@@ -1,0 +1,28 @@
+package practice;
+import java.util.Scanner;
+
+public class exception {
+
+    public String newAccount() throws Exception {
+        System.out.println("Enter your name ");
+        Scanner sc = new Scanner(System.in);
+        String nameof = sc.next();
+        System.out.println("Enter your mobile no ");
+        long mobileno = sc.nextLong();
+        System.out.println("Enter your adhar card no ");
+        long adharno = sc.nextLong();
+        return "Account created successfully";
+
+    }
+
+    public static void main(String[] args) {
+        try {
+            exception one = new exception();
+            String get = one.newAccount();
+            System.out.println(get.length());
+            System.out.println(get);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+}
