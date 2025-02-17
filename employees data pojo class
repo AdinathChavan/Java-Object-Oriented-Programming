@@ -1,0 +1,50 @@
+package StreamAPI;
+
+public class EmployeesData {
+    private String name;
+    private double salary;
+    private int id;
+    private long mobileNo;
+
+    public EmployeesData(String name, double salary, int id, long mobileNo){
+        this.name = name;
+        this.salary = salary;
+        this.id = id;
+        this.mobileNo = mobileNo;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setMobileNo(long mobileNo) {
+        this.mobileNo = mobileNo;
+    }
+
+    public void getId(int id){
+        this.id = id;
+    }
+    public double getSalary(){
+        return this.salary;
+    }
+    public void getmobileNo(long mobileno){
+        this.mobileNo= mobileno;
+    }
+
+    public String toString(){
+        return "name "+this.name+" id "+this.id+"mobile no "+this.id+" salary "+this.salary;
+    }
+
+}
