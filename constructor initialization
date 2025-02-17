@@ -1,0 +1,29 @@
+package practice;
+
+public class oops {
+    String name;
+    double salary;
+    long mobileno;
+    int id;
+
+    public oops(String name, double salary, long mobileno, int id){
+        this.name= name;
+        this.salary= salary;
+        this.mobileno= mobileno;
+        this.id= id;
+    }
+
+    public static void getData(oops one){
+        System.out.println(one);
+    }
+
+    public static void main(String[] args) {
+        oops one = new oops("Adinath",89000,9307685722L,8975);
+        getData(one);
+
+    }
+
+    public String toString(){
+        return "name "+this.name+" salary "+this.salary+" mobileno "+this.mobileno+" id "+this.id;
+    }
+}
