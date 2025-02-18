@@ -1,0 +1,35 @@
+package StreamAPI;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+public class datahandle {
+    public ArrayList<EmployeesData> getInformation(){
+        ArrayList<EmployeesData>  Data = new ArrayList<>();
+        EmployeesData one = new EmployeesData("Dhiraj",90000,8760,9878667549L);
+        EmployeesData two = new EmployeesData("Adinath",85000,8734,998675458L);
+        EmployeesData three = new EmployeesData("Ajay",87000,8004,9867554752L);
+        EmployeesData four = new EmployeesData("Kiran",86000,8734,998675458L);
+        Data.add(one);Data.add(two);Data.add(three);Data.add(four);
+        return Data;
+    }
+
+    public static void main(String[] args) {
+
+        datahandle one = new datahandle();
+        ArrayList<EmployeesData> information = one.getInformation();
+        Stream<EmployeesData> emp = information.stream();
+          List<String> ep = emp.filter(check -> check.getSalary()>85000).map(na -> na.getName()).toList();
+        System.out.println(ep);
+        System.out.println(ep.stream().count());
+         //List<EmployeesData> dob = emp.filter(check -> check.getSalary()>85000).toList();
+        //System.out.println(dob);
+
+        Stream<EmployeesData> data = information.stream();
+
+        List<EmployeesData>  em = data.filter(get -> get.getSalary()>75983).toList();
+        System.out.println(em);
+
+     
+    }
+}
