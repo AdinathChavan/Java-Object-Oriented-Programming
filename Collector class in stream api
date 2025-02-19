@@ -1,0 +1,27 @@
+package StreamAPI;
+
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class officework {
+    public static ArrayList<UsaEmployees> getData() {
+        ArrayList<UsaEmployees> data = new ArrayList<>();
+        data.add(new UsaEmployees(8374, "David warner", 89000, "Shikago", "Software Engineear", "Male", 2015));
+        data.add(new UsaEmployees(8374, "Team southey", 48335, "france", "Software developer", "Male", 2013));
+        data.add(new UsaEmployees(8374,"elis perry",90000, "england","java developer","female",2023));
+        data.add(new UsaEmployees(8374,"smriti mandhana",94000, "sangli","Senior developer","feMale",2010));
+        data.add(new UsaEmployees(8374,"virat kohli",980000, "dattawad","Python developer","Male",2011));
+        return data;
+
+    }
+
+        public static void main(String[] args) {
+        ArrayList<UsaEmployees> working = getData();
+        Set<String> one =working.stream()
+                .filter(m->m.getGender().equalsIgnoreCase("female")).map(m->m.getName()).collect(Collectors.toSet());
+
+
+            System.out.println(one);
+    }
+}
