@@ -1,0 +1,77 @@
+package StreamAPI;
+
+public class UsaEmployees {
+    private String name;
+    private double salary;
+    private int id;
+    private String city;
+    private String post;
+    private int yearOfJoining;
+    private String gender;
+
+    public UsaEmployees(int id, String name, double salary, String city, String post, String gender, int yearOfJoining){
+        this.city=city;
+        this.name=name;
+        this.salary=salary;
+        this.id=id;
+        this.gender=gender;
+        this.post=post;
+        this.yearOfJoining= yearOfJoining;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public int getYearOfJoining() {
+        return yearOfJoining;
+    }
+
+    public void setYearOfJoining(int yearOfJoining) {
+        this.yearOfJoining = yearOfJoining;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getPost() {
+        return post;
+    }
+
+    public void setPost(String post) {
+        this.post = post;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
