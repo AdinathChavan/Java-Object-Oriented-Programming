@@ -1,0 +1,22 @@
+package Objectclass;
+
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
+public class objectClass {
+    public static void main(String[] args) {
+        objectClass one =  new objectClass();
+
+        try{
+            Optional<String> result = one.getArea();
+            System.out.println(result);
+
+        }catch(NullPointerException ex ){
+            System.out.println(ex.getLocalizedMessage());
+        }
+    }
+
+    public Optional<String> getArea() throws NullPointerException{
+        return Optional.of(null);
+    }
+}
