@@ -1,0 +1,17 @@
+package Objectclass;
+
+import java.util.Optional;
+
+public class Mango {
+    public static void main(String[] args) {
+            Mango one = new Mango();
+            Optional<String> result = one.getName();
+            if(result.isPresent()){
+                System.out.println(result);
+            }
+    }
+
+    public Optional<String> getName(){
+        return Optional.of("Adinath Chavan");
+    }
+}
