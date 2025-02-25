@@ -1,0 +1,44 @@
+package Objectclass;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Optional;
+import java.util.List;
+import java.util.Scanner;
+
+public class Customer {
+
+    public static void main(String[] args) {
+
+        // first enter id check isexpired if expired then delete else show information.
+        List<Product> product= product();
+
+        System.out.println("Enter Product Id");
+        Scanner sc = new Scanner(System.in);
+        int pid= sc.nextInt();
+
+        List<Product> one = product.stream().filter(p->p.getId()==pid).filter(q->q.isExpired()).toList();
+
+        System.out.println(one);
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{}";
+    }
+
+    public static ArrayList<Product> product(){
+
+        ArrayList<Product> list = new ArrayList<>();
+
+        list.add(new Product(12,"Chicken Biryani", true));
+        list.add(new Product(79,"Veg Biryani", false));
+        list.add(new Product(12,"Chicken Lolipop", false));
+        list.add(new Product(12,"Pizza", true));
+
+    return list;
+
+    }
+}
