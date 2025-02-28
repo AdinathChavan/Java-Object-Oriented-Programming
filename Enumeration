@@ -1,0 +1,20 @@
+package Enumeration;
+
+public enum Weekdays {
+    Monday,
+    tuesday,
+    wednesday,
+    thursday,
+    friday,
+    saturday,
+    sunday;
+
+    public static void main(String[] args) {
+        Weekdays one = wednesday;
+
+        Weekdays two = thursday;
+        System.out.println(two);
+        System.out.println(one);
+
+    }
+}
