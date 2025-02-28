@@ -1,0 +1,15 @@
+package Interfaces.functionalinterface;
+
+public class customer {
+    public static void main(String[] args) {
+        NewAccount customerone = (int id, long mobileno)->{
+
+            System.out.println("mobile no is "+mobileno);
+            System.out.println("Id is "+id);
+            return "Account verified";
+
+        };
+
+        System.out.println(customerone.getData(12,679876556L));
+    }
+}
