@@ -1,0 +1,15 @@
+package Multithreading.java;
+
+public class threads extends Thread {
+
+    @Override
+    public void run() {
+        System.out.println("this is run method which is overrided from parent class (Thread)");
+    }
+
+    public static void main(String[] args) {
+        threads one = new threads();
+        one.start();
+        one.run();
+    }
+}
