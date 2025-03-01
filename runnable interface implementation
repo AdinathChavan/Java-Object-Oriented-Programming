@@ -1,0 +1,13 @@
+package Multithreading.java;
+
+public class threadsinfo implements Runnable{
+
+    public void run(){
+        System.out.println("Runnable class implementation");
+    }
+
+    public static void main(String[] args) {
+        threadsinfo one = new threadsinfo();
+        one.run();
+    }
+}
