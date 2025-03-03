@@ -1,0 +1,27 @@
+package Multithreading.java;
+
+import java.util.Scanner;
+
+public class Runnableinterface implements Runnable{
+
+    public void run(){
+        System.out.println("Welcome to java tutorials");
+        System.out.println("please enter your name");
+        Scanner sc = new Scanner(System.in);
+        try{
+            String name = sc.next();
+            System.out.println(name.toUpperCase());
+        }catch(Exception ex){
+            System.out.println(ex.getLocalizedMessage());
+        }
+    }
+
+
+
+    public static void main(String[] args) {
+
+        Runnableinterface one = new Runnableinterface();
+        one.run();
+
+    }
+}
