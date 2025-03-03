@@ -1,0 +1,24 @@
+package practice;
+
+import java.util.TreeSet;
+
+public class Treeset {
+    public void addinfo(){
+        TreeSet<String> info = new TreeSet<>();
+
+        info.add("Adinath");
+        info.add("Dhiraj");
+        info.add("Abhishek");
+        info.add("Ajay");
+        info.add("Kiran");
+
+
+        System.out.println(info);
+    }
+
+    public static void main(String[] args) {
+        Treeset one = new Treeset();
+        one.addinfo();
+
+    }
+}
