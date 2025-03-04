@@ -1,0 +1,25 @@
+package Objectclass;
+
+public class methodclass {
+    String name;
+    double salary;
+    String gender;
+
+    public methodclass(String name, double salary, String gender){
+        this.name=name;
+        this.salary=salary;
+        this.gender=gender;
+    }
+
+    public static void main(String[] args) {
+
+        methodclass one = new methodclass("Adinath",58900,"Male");
+
+        System.out.println(one.toString());
+
+    }
+
+    public String toString(){
+        return "name "+this.name+" Double "+this.salary+" gender "+this.gender;
+    }
+}
