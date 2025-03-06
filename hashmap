@@ -1,0 +1,21 @@
+package practice;
+
+import java.util.HashMap;
+
+public class hashmap {
+    public static void main(String[] args) {
+        System.out.println("Hashmap");
+
+        HashMap<String, Integer> one = new HashMap<String, Integer>();
+
+        one.put("adinath",335);
+        one.put("dhiraj",993);
+        one.put("kiran",9383);
+        one.put("ajay",834);
+
+
+        System.out.println(one.get("adinath"));
+
+        System.out.println(one);
+    }
+}
