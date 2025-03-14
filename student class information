@@ -1,0 +1,25 @@
+package Interfaces;
+
+import java.util.Scanner;
+
+public class faculty {
+    studentfacility one = ()->{
+        facility stud = new facility();
+        System.out.println("Enter name of the student :");
+        Scanner sc = new Scanner(System.in);
+        stud.name = sc.nextLine();
+        Scanner py = new Scanner(System.in);
+        System.out.println("Enter roll no of the student :");
+        stud.rollno = py.nextInt();
+        System.out.println("Enter the cgpa of the student :");
+        stud.cgpa = py.nextFloat();
+        return stud;
+    };
+    public static void main(String[] args) {
+        faculty member = new faculty();
+        facility two = member.one.studentinfo();
+        System.out.println(two.name);
+        System.out.println(two.rollno);
+        System.out.println(two.cgpa);
+    }
+}
