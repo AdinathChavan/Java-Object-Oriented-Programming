@@ -1,0 +1,12 @@
+package Interfaces;
+@FunctionalInterface
+public interface studentfacility {
+    facility studentinfo();
+
+    public static void  information(){
+        System.out.println("Static block");
+    }
+    public default void info(){
+        System.out.println("default block");
+    }
+}
