@@ -1,0 +1,8 @@
+public class CommanLineArguments {
+    public static void main(String[] args) {
+        for( String values : args){
+            System.out.println(values);
+        }
+        // command line arguments are passed to the main String method which we can iterate with for each loop.
+    }
+}
