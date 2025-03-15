@@ -1,0 +1,17 @@
+public class WrapperClass {
+    public static void main(String[] args) {
+        int a= 234;
+        float b = 343.4f;
+        String name = "2546";
+        long number = 2343244L;
+
+        Integer aj = Integer.valueOf(a);
+        Float af = Float.valueOf(b);
+        Long al = Long.valueOf(number);
+
+        Long num = Long.valueOf(name);
+        System.out.println(num);
+        System.out.println(1223+num);
+
+    }
+}
