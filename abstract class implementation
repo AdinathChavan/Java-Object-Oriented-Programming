@@ -1,0 +1,15 @@
+public abstract class abstractclass {
+
+    public abstract void printinfo();
+
+    public static void newmemberinfo(){
+        System.out.println("New member created");
+    }
+
+
+    public static void main(String[] args) {
+        //708690
+
+       abstractclass.newmemberinfo();
+    }
+}
