@@ -1,0 +1,9 @@
+public class newclass {
+
+
+    public static void main(String[] args) {
+        newclass one = new newclass();
+        finalclass two = new finalclass();
+      two.nameOfStudent();
+    }
+}
