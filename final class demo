@@ -1,0 +1,11 @@
+public final class finalclass {
+
+    public void nameOfStudent(){
+        System.out.println("name of the student ");
+    }
+    public static void main(String[] args) {
+        finalclass one = new finalclass();
+        one.nameOfStudent();
+
+    }
+}
