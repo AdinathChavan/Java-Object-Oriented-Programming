@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Arraylist {
+    public ArrayList<student> data(){
+
+        ArrayList<student> data = new ArrayList<>();
+
+        student one = new student(253,"Adinath chavan",9.6f,8977366273l);
+        student two = new student(5653,"Dhiraj chavan",9.9f,8987656273l);
+        student three = new student(3842,"Pavan patil",9.8f,3984762536l);
+        student four = new student(2942,"Kiran rane",9.7f,92847247222l);
+
+        data.add(one);
+        data.add(two);
+        data.add(three);
+        data.add(four);
+
+        return data;
+
+    }
+
+    public static void main(String[] args) {
+        Arraylist dataget = new Arraylist();
+        ArrayList<student> info = dataget.data();
+        ArrayList<String> name = new ArrayList<>();
+
+        Stream<student> inf = info.stream();
+
+        List<student> ijhk = inf.filter(g->g.getName().equalsIgnoreCase("adinath chavan")).toList();
+
+        System.out.println(ijhk);
+    }
+}
