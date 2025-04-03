@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.lang.Exception;
+
+public class exception {
+    public void StringOperation(String name) throws NullPointerException{
+        System.out.println("Answer :"+name.toUpperCase());
+    }
+    public static void main(String[] args) {
+        System.out.println("enter your name ");
+        Scanner sc = new Scanner(System.in);
+        String name = null;
+        try{
+            exception one = new exception();
+            one.StringOperation(name);
+        }catch(Throwable ex){
+            System.out.println(ex.getMessage());
+        }
+
+    }
+}
