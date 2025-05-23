@@ -1,0 +1,17 @@
+package jdbcconnectivity;
+
+public class person implements ethics {
+	public person() {
+		System.out.println("constructor called : default constructor");
+	}
+	public String quotes() {
+		return " Animals are greate than Human";
+	}
+	public static void main(String args[]) {
+		person one = new person();
+		String line = one.quotes();
+		
+		System.out.println(line);
+		
+	}
+}
