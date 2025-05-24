@@ -1,0 +1,30 @@
+package javaprogrammingcodes;
+import java.util.Scanner;
+
+
+public class teams{
+	void newteam() {
+		interfacemodule three=()->{
+			System.out.println(" 124 teams ");
+		};
+		three.namesOfTeams();
+	}
+	
+	
+
+	public static void main(String[] args) {
+		
+			interfacemodule one = ()->{
+			 System.out.println("enter number of teams : ");
+			 Scanner sc = new Scanner(System.in);
+			int  a= sc.nextInt();
+			 System.out.println("No of teams :"+a);
+				
+			};
+			one.namesOfTeams();
+			teams th = new teams();
+			th.newteam();
+					
+	}
+
+}
