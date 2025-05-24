@@ -1,0 +1,29 @@
+package javaprogrammingcodes;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class office {
+	
+	public static void main(String args[]) {
+		employee one = new employee("adinath chavan",98777f,89237472l,77);
+		employee two = new employee("adinath kesarkar",90000,89237472l,98);
+		employee three = new employee("kedar chavan",98000f,899823472l,67);
+		employee four = new employee("dilip chavan",9800f,89239472l,70);
+		employee five = new employee("rohan chavan",87000f,89237470l,71);
+		
+		ArrayList<employee> data = new ArrayList<employee>();
+		data.add(one);
+		data.add(two);
+		data.add(three);
+		data.add(four);
+		data.add(five);
+		
+		List<employee> list  = data.stream().filter(c->c.getSalary()>=98000).toList();
+	   
+		System.out.println(list);
+
+	}
+
+}
