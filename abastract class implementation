@@ -1,0 +1,14 @@
+package javaprogrammingcodes;
+
+public class student extends abstractclass{
+	 public  void method() {
+		 System.out.println("abstract class method implemented ");  
+	  }
+
+	public static void main(String[] args) {
+		student one = new student();
+		one.method();
+
+	}
+
+}
