@@ -1,0 +1,15 @@
+public class User implements Bank{
+
+    public static void main(String[] args) {
+        User one = new User();
+        one.userInfo();
+
+        Bank.bankInfo();
+        one.information();
+    }
+
+    @Override
+    public void information() {
+        System.out.println("this is methd implemented from Bank interface...");
+    }
+}
