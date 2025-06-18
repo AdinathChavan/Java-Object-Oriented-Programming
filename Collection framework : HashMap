@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+public class dataBase {
+    public static void main(String[] args) {
+        school one = new school(12,"adinath chavan", 2345);
+        school two = new school(17,"tejas chavan", 2335);
+        school three = new school(19,"ajay chavan", 2945);
+        school four = new school(10,"dhiraj chavan", 2235);
+        school five = new school(22,"yash chavan", 2985);
+
+        HashMap<Integer,school> values = new HashMap<>();
+        values.put(1,one);
+        values.put(2,two);
+        values.put(3,three);
+        values.put(4,four);
+        values.put(5,five);
+        
+        dataBase base = new dataBase();
+        base.getData(values);
+
+
+    }
+
+    public void getData(HashMap one){
+        System.out.println(one);
+
+
+
+    }
+}
