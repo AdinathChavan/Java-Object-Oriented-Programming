@@ -1,0 +1,47 @@
+package com.infosiys;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Office{
+	
+	public static void main(String[] args) {
+		
+		
+		Office one = new Office();
+		ArrayList<Employee> data = one.dataOfEmployee();
+		System.out.println(data);
+		
+		//1. get the all employee names.
+		//2. get salary of the employees : total, highest, lowest.
+		//3. get id of all employees.
+		//4. get position of employee with their name.
+		
+		data.stream().map(e->e.getName()).forEach(System.out::println);
+		
+//		double highestSalary=data.stream().map(f->f.getSalary()).max(null);
+			
+	}
+	
+	public ArrayList<Employee> dataOfEmployee() {
+		ArrayList<Employee> list= new ArrayList<>();
+		
+		Employee one = new Employee(12, "adinath chavan", 10000.23f, 'M', "Java Developer", 9307685722l);
+		Employee two = new Employee(13,"dhiraj chavan",10200.23f,'M',"Java analyser",9309875722l);
+		Employee three = new Employee(14,"tejas chavan",9000.23f,'M',"python Developer",8977665453l);
+		Employee four = new Employee(15,"snehal patil",10000.23f,'F',"Java Developer",9307680022l);
+		Employee five = new Employee(16,"vinay more",6900.23f,'M',"python Developer",9307685722l);
+		Employee six= new Employee(17,"abhinav patil",10100.23f,'M',".net Developer",93077889722l);
+		Employee seven = new Employee(18,"bhakti chavan",10300.23f,'F',"C++ Developer",7699887898l);
+		Employee eight = new Employee(19,"kiran more",11001.23f,'M',"python analyser",9307765722l);
+		Employee nine = new Employee(20,"sejal patil",10500.23f,'M',"C Developer",8307685722l);
+		Employee ten = new Employee(21,"shrisha chavan",9500.23f,'F',"Full Stack Developer",9397685722l);
+		Employee eleven = new Employee(22,"kedar",9700.23f,'M',"python debugger",9309876522l);
+		
+		list.add(one);list.add(two);list.add(three);list.add(four);list.add(five);list.add(six);list.add(seven);list.add(eight);list.add(nine);list.add(ten);list.add(eleven);
+		
+		return list;
+
+		
+	}
+}
