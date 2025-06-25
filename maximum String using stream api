@@ -1,0 +1,26 @@
+package com.infosiys;
+
+import java.util.ArrayList;
+import java.util.Optional;
+
+public class LongestString {
+	public static void main(String[] args) {
+		String[] value = {"adinath","yash","dhiraj","kiran","kumar"};
+		
+		ArrayList<String> string =new ArrayList<>();
+		
+		for(int i=0; i<value.length; i++) {
+			string.add(value[i]);
+		}
+		
+		System.out.println(string);
+		
+		Optional<String> values = string.stream().min(String::compareTo);
+		
+		values.ifPresent(System.out::println);
+		
+		
+		
+	}
+
+}
