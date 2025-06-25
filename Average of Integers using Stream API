@@ -1,0 +1,29 @@
+package com.infosiys;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class AverageOfIntegers {
+	
+	public static void main(String[] args) {
+		System.out.println("enter the number from : ");
+		int a; 
+		Scanner sc = new Scanner(System.in);
+		a = sc.nextInt();
+		
+		System.out.println("enter the number to : ");
+		int b = sc.nextInt();
+		ArrayList<Integer> numbers = new ArrayList<>();
+		
+		for(int i=a; i<=b; i++) {
+			numbers.add(i);
+		}
+		
+		Double result = numbers.stream().collect(Collectors.averagingInt(e->e.intValue()));
+		System.out.println(result);
+		
+		
+		}
+
+}
