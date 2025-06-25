@@ -1,0 +1,25 @@
+package com.infosiys;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Stream;
+
+public class StringOperation {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter String :");
+		String string = sc.nextLine();
+		ArrayList<String> values = new ArrayList<>();
+		
+		
+		values.add(string);
+		
+		List<String> vl =values.stream().map(String::toUpperCase).toList();
+		System.out.println(vl);
+		 
+		
+	}
+
+}
