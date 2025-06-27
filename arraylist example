@@ -1,0 +1,36 @@
+package StreamAPI;
+
+import java.util.ArrayList;
+
+public class numbers {
+
+    public static void average(ArrayList<Integer> list){
+
+        int sum =0;
+        for(Integer script : list  ){
+            System.out.println(script);
+            sum=sum+script;
+        }
+
+        double avg = sum/list.size();
+        System.out.println(avg);
+
+    }
+
+
+
+
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add(84);
+        list.add(52);
+        list.add(46);
+        list.add(58);
+        list.add(90);
+        list.add(88);
+
+        average(list);
+    }
+}
