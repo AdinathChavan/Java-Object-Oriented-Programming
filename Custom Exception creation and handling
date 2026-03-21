@@ -1,0 +1,38 @@
+package Fuel;
+
+public class StudentMarks {
+
+    public static void checkMarks(int a) throws CustomException {
+        System.out.println("marks : "+a);
+        if(a<0 || a>100){
+            throw new CustomException("invalid marks marks should be in between 0 and 100");
+        }else{
+            System.out.println("Valid student marks....");
+        }
+
+    }
+    public static void main(String[] args) {
+
+
+        int[] a = {12, 48, 333, 45, -78, 999, -2};
+
+        for (int i = 0; i < a.length; i++)
+        {
+            try {
+                System.out.println("Checking marks "+a[i]);
+                checkMarks(a[i]);
+            }
+        catch(CustomException e){
+            System.out.println("Exception " + e.getMessage());
+        }finally{
+            System.out.println("Process done");
+                System.out.println("-------------------------");
+        }
+    }
+
+
+
+
+
+    }
+}
