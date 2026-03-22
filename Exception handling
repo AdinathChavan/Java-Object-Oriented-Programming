@@ -1,0 +1,27 @@
+package Fuel;
+
+import java.util.Scanner;
+
+public class ExceptionHandling {
+
+    public static void exception(){
+        int a;
+        int b = 34;
+
+        try{
+            System.out.println("enter value :");
+            Scanner sc = new Scanner(System.in);
+            a = sc.nextInt();
+            System.out.println(b/a);
+        }catch(Exception e){
+            System.out.println( e.getMessage());
+        }finally {
+            System.out.println("Done");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        exception();
+    }
+}
